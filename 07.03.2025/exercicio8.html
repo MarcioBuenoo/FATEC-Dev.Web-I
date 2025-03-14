@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercício 8</title>
+    <style>
+      html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: calibri;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+      }
+      #menu {
+        width: 100vw;
+        border-bottom: 1px ssolid #aaa;
+        box-sizing: border-box;
+        flex: 1 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #corpo {
+        width: 100vw;
+        background-color: #444;
+        flex: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #rodape {
+        width: 100vw;
+        border-top: 1px solid #aaa;
+        box-sizing: border-box;
+        flex: 2 80px;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #titulo {
+        display: flex;
+        flex-direction: row;
+      }
+      #titulo > div {
+        font-size: 48px;
+        font-weight: bold;
+      }
+      #avatar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      #avatar > div {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        color: #fff;
+      }
+      fieldset > div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      label {
+        color: #fff;
+      }
+      input {
+        width: 300px;
+        padding: 5px;
+        border-radius: 5px;
+        border-width: 0px;
+        box-sizing: border-box;
+      }
+      .botao {
+        background-color: #35a6db;
+        padding: 5px 15px;
+        box-sizing: border-box;
+        color: #fff;
+        margin-top: 5px;
+        width: auto;
+      }
+      #botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+      #esquerda {
+        display: flex;
+        background-color: yellow;
+        flex: 1 200px;
+        height: 100%;
+      }
+      #direita {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex: 20;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <div id="titulo">
+        <img src="./imagens/css.png" alt="" width="60" height="60" />
+        <div>CSS3</div>
+      </div>
+      <div id="avatar">
+        <div>Bill Gates</div>
+        <img src="./imagens/avatar.jpg" alt="" width="42" height="42" />
+      </div>
+    </div>
+    <div id="corpo">
+      <div id="esquerda"></div>
+      <div id="direita">
+        <form>
+          <fieldset>
+            <legend>Login</legend>
+            <div>
+              <label>e-mail</label>
+              <input type="email" name="mail" />
+            </div>
+            <div>
+              <label>Senha</label>
+              <input type="password" name="senha" />
+            </div>
+            <div id="botoes">
+              <input type="submit" value="Enviar" class="botao" />
+              <input type="reset" value="Limpar" class="botao" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div id="rodape">
+      <img src="./imagens/Fatec.png" alt="" width="87" height="41" />
+      <img src="./imagens/CPS.png" alt="" width="85" height="56" />
+      <img src="./imagens/Brasao.png" alt="" width="81" height="54" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 4</title>
+    <style>
+        html {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: calibri;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #menu {
+            width: 100vw;
+            border-bottom: 1px solid #aaa;
+            box-sizing: border-box;
+            flex: 1 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        #titulo {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #titulo > div {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        #avatar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #avatar > div {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        #corpo {
+            height: 100vh;
+            width: 100vw;
+            background-color: #444;
+            flex: 10;
+        }
+
+        #rodape {
+            height: 80px;
+            width: 100vw;
+            border-top: 1px solid #aaa;
+            box-sizing: border-box;
+            flex: 2 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div id="titulo">
+            <img src="./imagens/css.png" alt="" width="60" height="60" />
+            <div>CSS3</div>
+        </div>
+        <div id="avatar">
+            <div>Bill Gates</div>
+            <img src="./imagens/avatar.jpg" alt="" width="42" height="42" />
+        </div>
+    </div>
+    <div id="corpo"></div>
+    <div id="rodape">
+        <img src="./imagens/Fatec.png" alt="" width="87" height="41" />
+        <img src="./imagens/CPS.png" alt="" width="85" height="56" />
+        <img src="./imagens/Brasao.png" alt="" width="81" height="54" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo 1</title>
+    <style>
+      body {
+        background-color: yellow;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+      }
+      div {
+        flex: 1;
+      }
+      .linha {
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media (max-width: 1000px) {
+        body {
+          background-color: green;
+          max-width: 100%;
+          flex-direction: column
+        }
+        div {
+          flex: 1;
+        }
+        .linha {
+          flex-direction: row;
+        }
+      }
+      @media (max-width: 600px) {
+        body {
+          background-color: blue;
+          flex-direction: column;
+        }
+        div {
+          width: 100%;
+        }
+        .linha {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="linha">
+      <div style="background-color: red">A</div>
+      <div style="background-color: lightyellow">B</div>
+    </div>
+    <div class="linha">
+      <div style="background-color: cyan">C</div>
+      <div style="background-color: orange">D</div>
+    </div>
+  </body>
+</html>
